@@ -19,25 +19,19 @@
 
 	async function getNumbers() {
 		try {
-			const response = await axios.post('http://127.0.0.1:3000/api/v1/global_numbers/', {});
-
+			const response = await axios.get('http://127.0.0.1:3000/api/v1/global_numbers/', {});
 			num_stories = response.data.num_stories;
 			num_users = response.data.num_users;
 			num_characters = response.data.num_characters;
-
 			console.log('Respuesta del backend:', response.data);
+			console.log('Respuesta del backend:', response.data.num_characters);
 		} catch (error) {
 			console.error('Error al enviar la petición:', error.message);
 		}
 	}
 
-	onMount(() => {
-		getNumbers();
-
-		num_stories = formatNumber(num_stories);
-		num_users = formatNumber(num_users);
-		num_characters = formatNumber(num_characters);
-
+	onMount(async () => {
+		await getNumbers();
 		animateNumbers();
 	});
 

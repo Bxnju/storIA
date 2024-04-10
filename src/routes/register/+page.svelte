@@ -8,7 +8,7 @@
 	let name = '';
 	let last_name = '';
 	let mail = '';
-	let birth_day = '';
+	let birth_date = '';
 	let password = '';
 	let password_confirmation = '';
 	let errorMessage = '';
@@ -39,19 +39,21 @@
 			return;
 		}
 
-		if (!validateBirthDay(birth_day)) {
+		if (!validateBirthDay(birth_date)) {
 			errorMessage = '🚩 La fecha de nacimiento no puede ser en el futuro.';
 			return;
 		}
 
 		try {
 			const response = await axios.post('http://127.0.0.1:3000/api/v1/sign_up', {
-				name,
-				last_name,
-				mail,
-				birth_day,
-				password,
-				password_confirmation
+				"user":{
+					name,
+					last_name,
+					mail,
+					birth_date,
+					password,
+					password_confirmation
+				}
 			});
 
 			console.log('Respuesta del backend:', response.data);
@@ -100,7 +102,7 @@
 		<div class="input-columns">
 			<label>
 				Birth Day
-				<input type="date" bind:value={birth_day} />
+				<input type="date" bind:value={birth_date} />
 			</label>
 
 			<label>
