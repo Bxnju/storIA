@@ -46,7 +46,7 @@
 
 		try {
 			const response = await axios.post('http://127.0.0.1:3000/api/v1/sign_up', {
-				"user":{
+				user: {
 					name,
 					last_name,
 					mail,
@@ -57,6 +57,9 @@
 			});
 
 			console.log('Respuesta del backend:', response.data);
+
+			let token = response.data.token;
+			localStorage.setItem('authToken', token);
 		} catch (error) {
 			console.error('Error al enviar la petición:', error.message);
 		}

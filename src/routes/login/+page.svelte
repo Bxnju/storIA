@@ -3,11 +3,6 @@
 	import { onMount } from 'svelte';
 	import world from '$lib/images/planet-1.png';
 
-	let token = 'TOKENNENENNE!';
-
-	localStorage.setItem('authToken', token);
-	// {localStorage.getItem('authToken')}
-
 	let mail = '';
 	let password = '';
 	let errorMessage = '';
@@ -41,6 +36,9 @@
 			});
 
 			console.log('Respuesta del backend:', response.data);
+
+			let token = response.data.token;
+			localStorage.setItem('authToken', token);
 		} catch (error) {
 			console.error('Error al enviar la petición:', error.message);
 		}
