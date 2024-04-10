@@ -20,6 +20,8 @@
 	}
 
 	async function handleSubmit() {
+		errorMessage = '';
+
 		if (!validateEmail(mail)) {
 			errorMessage = '🚩 Por favor, ingrese un correo electrónico válido.';
 			return;
@@ -40,6 +42,8 @@
 
 			let token = response.data.token;
 			localStorage.setItem('authToken', token);
+
+			errorMessage = '✔ Estas logeado correctamente';
 		} catch (error) {
 			console.error('Error al enviar la petición:', error.message);
 
