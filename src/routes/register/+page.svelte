@@ -1,6 +1,7 @@
 <script>
 	import axios from 'axios';
 	import { onMount } from 'svelte';
+	import { navigate } from 'svelte-routing';
 
 	import world from '$lib/images/planet-3.png';
 	import world_2 from '$lib/images/planet-4.png';
@@ -60,6 +61,8 @@
 
 			let token = response.data.token;
 			localStorage.setItem('authToken', token);
+
+			navigate('/login');
 		} catch (error) {
 			console.error('Error al enviar la petición:', error.message);
 		}

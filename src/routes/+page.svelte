@@ -31,7 +31,6 @@
 	}
 
 	onMount(async () => {
-		console.log(localStorage.getItem('authToken'));
 		await getNumbers();
 		animateNumbers();
 	});
@@ -70,9 +69,6 @@
 	<img src={world} alt="Welcome" />
 </section>
 
-{#if localStorage.getItem('authToken') != null}
-	{alert('You are logged in')}
-{/if}
 <section class="global_variables">
 	<h1>Some of our best goals of 2024</h1>
 	<div class="goals">
