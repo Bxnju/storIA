@@ -2,9 +2,9 @@
 	import { onMount } from 'svelte';
 	import world from '$lib/images/planet-1.png';
 
-	let stories_number = 123546543;
+	let stories_number = 12546543;
 	let users_number = 142300;
-	let downloads_number = 598000;
+	let characters_number = 598000;
 
 	function formatNumber(number) {
 		if (number >= 1000000) {
@@ -19,7 +19,7 @@
 	onMount(() => {
 		stories_number = formatNumber(stories_number);
 		users_number = formatNumber(users_number);
-		downloads_number = formatNumber(downloads_number);
+		characters_number = formatNumber(characters_number);
 		animateNumbers();
 	});
 
@@ -69,8 +69,8 @@
 			<h4>Users</h4>
 		</div>
 		<div class="goal">
-			<h2 class="animated-number" data-value={downloads_number}></h2>
-			<h4>Downloads</h4>
+			<h2 class="animated-number" data-value={characters_number}></h2>
+			<h4>Characters</h4>
 		</div>
 	</div>
 </section>
