@@ -6,6 +6,7 @@
 	let token = 'TOKENNENENNE!';
 
 	localStorage.setItem('authToken', token);
+	// {localStorage.getItem('authToken')}
 
 	let email = '';
 	let password = '';
@@ -61,7 +62,7 @@
 <form on:submit|preventDefault={handleSubmit}>
 	<h1>Login to StorIA</h1>
 	<label>
-		{localStorage.getItem('authToken')}
+		Email
 		<input type="email" bind:value={email} />
 	</label>
 
