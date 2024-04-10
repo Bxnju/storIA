@@ -1,7 +1,6 @@
 <script>
 	import axios from 'axios';
 	import { onMount } from 'svelte';
-	import { navigate } from 'svelte-routing';
 
 	import world from '$lib/images/planet-3.png';
 	import world_2 from '$lib/images/planet-4.png';
@@ -62,9 +61,15 @@
 			let token = response.data.token;
 			localStorage.setItem('authToken', token);
 
-			navigate('/login');
+			window.location.href = 'http://127.0.0.1:5173/login';
 		} catch (error) {
-			console.error('Error al enviar la petición:', error.message);
+			console.error('Error al enviar la petición:', error.response.data);
+
+			if (error.response && error.response.status === 401) {
+				errorMessage = '🚩 Ha ocurrido un error en el registro. Revisa bien todos tus datos.';
+			} else {
+				errorMessage = '🚩 Ha ocurrido un error. Por favor, intenta nuevamente más tarde.';
+			}
 		}
 	}
 

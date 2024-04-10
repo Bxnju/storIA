@@ -1,7 +1,6 @@
 <script>
 	import axios from 'axios';
 	import { onMount } from 'svelte';
-	import { navigate } from 'svelte-routing';
 
 	import world from '$lib/images/planet-1.png';
 
@@ -41,10 +40,14 @@
 
 			let token = response.data.token;
 			localStorage.setItem('authToken', token);
-
-			navigate('/');
 		} catch (error) {
 			console.error('Error al enviar la petición:', error.message);
+
+			if (error.response && error.response.status === 401) {
+				errorMessage = '🚩 Acceso denegado. Comprueba tus credenciales.';
+			} else {
+				errorMessage = '🚩 Ha ocurrido un error. Por favor, intenta nuevamente más tarde.';
+			}
 		}
 	}
 
