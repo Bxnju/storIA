@@ -8,7 +8,7 @@
 	localStorage.setItem('authToken', token);
 	// {localStorage.getItem('authToken')}
 
-	let email = '';
+	let mail = '';
 	let password = '';
 	let errorMessage = '';
 
@@ -20,23 +20,23 @@
 
 	// Validador de contraseña
 	function validatePassword(input) {
-		return input.length >= 6; // Longitud mínima de 6 caracteres
+		return input.length >= 5; // Longitud mínima de 6 caracteres
 	}
 
 	async function handleSubmit() {
-		if (!validateEmail(email)) {
+		if (!validateEmail(mail)) {
 			errorMessage = '🚩 Por favor, ingrese un correo electrónico válido.';
 			return;
 		}
 
 		if (!validatePassword(password)) {
-			errorMessage = '🚩 La contraseña debe tener al menos 6 caracteres.';
+			errorMessage = '🚩 La contraseña debe tener al menos 5 caracteres.';
 			return;
 		}
 
 		try {
-			const response = await axios.post('http://127.0.0.1:8000/login/', {
-				email,
+			const response = await axios.post('http://127.0.0.1:3000/api/v1/sign_in/', {
+				mail,
 				password
 			});
 
@@ -63,7 +63,7 @@
 	<h1>Login to StorIA</h1>
 	<label>
 		Email
-		<input type="email" bind:value={email} />
+		<input type="email" bind:value={mail} />
 	</label>
 
 	<label>
