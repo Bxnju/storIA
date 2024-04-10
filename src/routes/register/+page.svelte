@@ -45,7 +45,7 @@
 		}
 
 		try {
-			const response = await axios.post('http://127.0.0.1:8000/register/', {
+			const response = await axios.post('http://127.0.0.1:3000/api/v1/sign_up', {
 				name,
 				last_name,
 				mail,

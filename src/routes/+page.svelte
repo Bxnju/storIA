@@ -1,4 +1,5 @@
 <script>
+	import axios from 'axios';
 	import { onMount } from 'svelte';
 	import world from '$lib/images/planet-1.png';
 
