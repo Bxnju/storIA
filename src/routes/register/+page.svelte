@@ -6,11 +6,11 @@
 	import world_2 from '$lib/images/planet-4.png';
 
 	let name = '';
-	let lastName = '';
-	let email = '';
-	let birthDay = '';
+	let last_name = '';
+	let mail = '';
+	let birth_day = '';
 	let password = '';
-	let passwordConfirm = '';
+	let password_confirmation = '';
 	let errorMessage = '';
 
 	function validateEmail(input) {
@@ -29,7 +29,7 @@
 	}
 
 	async function handleSubmit() {
-		if (!validateEmail(email)) {
+		if (!validateEmail(mail)) {
 			errorMessage = '🚩 Por favor, ingrese un correo electrónico válido.';
 			return;
 		}
@@ -39,7 +39,7 @@
 			return;
 		}
 
-		if (!validateBirthDay(birthDay)) {
+		if (!validateBirthDay(birth_day)) {
 			errorMessage = '🚩 La fecha de nacimiento no puede ser en el futuro.';
 			return;
 		}
@@ -47,11 +47,11 @@
 		try {
 			const response = await axios.post('http://127.0.0.1:8000/register/', {
 				name,
-				lastName,
-				email,
-				birthDay,
+				last_name,
+				mail,
+				birth_day,
 				password,
-				passwordConfirm
+				password_confirmation
 			});
 
 			console.log('Respuesta del backend:', response.data);
@@ -88,19 +88,19 @@
 
 			<label>
 				Last Name
-				<input type="text" bind:value={lastName} />
+				<input type="text" bind:value={last_name} />
 			</label>
 
 			<label>
 				Email
-				<input type="email" bind:value={email} />
+				<input type="email" bind:value={mail} />
 			</label>
 		</div>
 
 		<div class="input-columns">
 			<label>
 				Birth Day
-				<input type="date" bind:value={birthDay} />
+				<input type="date" bind:value={birth_day} />
 			</label>
 
 			<label>
@@ -110,7 +110,7 @@
 
 			<label>
 				Confirm your password
-				<input type="password" bind:value={passwordConfirm} />
+				<input type="password" bind:value={password_confirmation} />
 			</label>
 		</div>
 	</div>

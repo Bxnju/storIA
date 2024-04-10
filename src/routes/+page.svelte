@@ -2,9 +2,9 @@
 	import { onMount } from 'svelte';
 	import world from '$lib/images/planet-1.png';
 
-	let stories_number = 12546543;
-	let users_number = 142300;
-	let characters_number = 598000;
+	let num_stories = 0;
+	let num_users = 0;
+	let num_characters = 0;
 
 	function formatNumber(number) {
 		if (number >= 1000000) {
@@ -16,10 +16,27 @@
 		}
 	}
 
+	async function getNumbers() {
+		try {
+			const response = await axios.post('http://127.0.0.1:3000/api/v1/global_numbers/', {});
+
+			num_stories = response.data.num_stories;
+			num_users = response.data.num_users;
+			num_characters = response.data.num_characters;
+
+			console.log('Respuesta del backend:', response.data);
+		} catch (error) {
+			console.error('Error al enviar la petición:', error.message);
+		}
+	}
+
 	onMount(() => {
-		stories_number = formatNumber(stories_number);
-		users_number = formatNumber(users_number);
-		characters_number = formatNumber(characters_number);
+		getNumbers();
+
+		num_stories = formatNumber(num_stories);
+		num_users = formatNumber(num_users);
+		num_characters = formatNumber(num_characters);
+
 		animateNumbers();
 	});
 
@@ -61,15 +78,15 @@
 	<h1>Some of our best goals of 2024</h1>
 	<div class="goals">
 		<div class="goal">
-			<h2 class="animated-number" data-value={stories_number}></h2>
+			<h2 class="animated-number" data-value={num_stories}></h2>
 			<h4>Stories</h4>
 		</div>
 		<div class="goal">
-			<h2 class="animated-number" data-value={users_number}></h2>
+			<h2 class="animated-number" data-value={num_users}></h2>
 			<h4>Users</h4>
 		</div>
 		<div class="goal">
-			<h2 class="animated-number" data-value={characters_number}></h2>
+			<h2 class="animated-number" data-value={num_characters}></h2>
 			<h4>Characters</h4>
 		</div>
 	</div>
