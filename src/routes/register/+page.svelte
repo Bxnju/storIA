@@ -10,6 +10,7 @@
 	let email = '';
 	let birthDay = '';
 	let password = '';
+	let passwordConfirm = '';
 	let errorMessage = '';
 
 	function validateEmail(input) {
@@ -49,7 +50,8 @@
 				lastName,
 				email,
 				birthDay,
-				password
+				password,
+				passwordConfirm
 			});
 
 			console.log('Respuesta del backend:', response.data);
@@ -106,9 +108,14 @@
 				<input type="password" bind:value={password} />
 			</label>
 
-			<button type="submit">Register my data</button>
+			<label>
+				Confirm your password
+				<input type="password" bind:value={passwordConfirm} />
+			</label>
 		</div>
 	</div>
+
+	<button type="submit">Register my data</button>
 
 	{#if errorMessage}
 		<p class="error-message">{errorMessage}</p>
@@ -213,8 +220,8 @@
 	}
 
 	button[type='submit'] {
+		display: inline;
 		margin-top: 1rem;
-		width: 100%;
 		padding: 1rem;
 		border: none;
 		border-radius: 8px;

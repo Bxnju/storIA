@@ -54,7 +54,7 @@
 			data-content-id="content-4"
 			on:click={() => showContent('content-4')}
 		>
-			Escenaries <span class="material-icons"> landscape </span>
+			Scenarios <span class="material-icons"> landscape </span>
 		</button>
 		<button
 			class="btn {activeContent === 'content-5' ? 'btn-active' : ''}"
@@ -111,16 +111,63 @@
 		</div>
 		<div class="content {activeContent === 'content-2' ? 'visible' : ''}" id="content-2">
 			<h1>Characters <span class="material-icons"> accessibility_new </span></h1>
-			<img src="" alt="" />
-			<p class="text-content">Pruebas de desarrollo para StorIA</p>
+			<img
+				src="https://static01.nyt.com/images/2023/09/27/multimedia/27META-AI-SUB1-clgh/27META-AI-SUB1-clgh-videoSixteenByNine3000.jpg"
+				alt=""
+			/>
+			<p class="text-content">
+				Qorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptatibus cumque quasi
+				optio nihil, debitis sit rem deserunt modi. Labore nobis reiciendis id repellendus aut
+				provident soluta, nihil laudantium tenetur. Sequi molestiae, odio laborum ex deleniti quia
+				eligendi dolore vero, dolor doloribus ipsa ullam! Deserunt voluptatem veritatis enim maiores
+				quasi maxime labore suscipit? Alias aliquid nam maiores qui at aliquam. Illo, quidem vero?
+				Autem minus fugit ad similique id atque cupiditate reprehenderit. Sint odit eligendi neque
+				suscipit animi, tenetur rem nihil nostrum officia porro maiores, reprehenderit ipsa
+				aspernatur eaque temporibus. Fuga eaque accusamus perspiciatis voluptate sapiente dolore
+				tempore totam quas est nam, dolores commodi corporis eos omnis? Quisquam, aperiam alias.
+				Quod asperiores aliquam eaque nostrum debitis voluptatem quia, enim voluptates. Nostrum,
+				aliquam. Error voluptatibus modi nisi possimus optio ullam. Repellendus quis reiciendis sunt
+				non, aspernatur voluptate quaerat suscipit qui dolorem debitis ab sequi nisi ipsa dolor
+				nobis error repudiandae possimus? Est, sed expedita ab nihil voluptates ea totam maiores,
+				quos provident, nam earum laboriosam obcaecati? Optio commodi iure sed alias facilis dolore
+				atque veniam dignissimos corporis! Necessitatibus maxime aperiam animi? Deleniti officiis
+				temporibus eius blanditiis eum excepturi, officia natus quasi, ex, facere exercitationem
+				maiores earum quis. Ut minus aliquid hic alias esse libero maxime! Atque quod molestiae
+				possimus alias fugiat. Dolorem quos officia animi quasi cumque tempora aliquam sapiente
+				deleniti fuga debitis recusandae blanditiis alias reprehenderit perferendis explicabo
+				laudantium, possimus corporis esse nulla velit, incidunt iusto. Numquam tempora porro
+				voluptates?
+			</p>
 		</div>
 		<div class="content {activeContent === 'content-3' ? 'visible' : ''}" id="content-3">
 			<h1>Context <span class="material-icons"> emoji_objects </span></h1>
-			<img src="" alt="" />
-			<p class="text-content">Pruebas de desarrollo para StorIA</p>
+			<img src="https://i.pinimg.com/736x/e8/bf/f3/e8bff3d8091182dcbb0b3e64488b04b4.jpg" alt="" />
+			<p class="text-content">
+				Qorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptatibus cumque quasi
+				optio nihil, debitis sit rem deserunt modi. Labore nobis reiciendis id repellendus aut
+				provident soluta, nihil laudantium tenetur. Sequi molestiae, odio laborum ex deleniti quia
+				eligendi dolore vero, dolor doloribus ipsa ullam! Deserunt voluptatem veritatis enim maiores
+				quasi maxime labore suscipit? Alias aliquid nam maiores qui at aliquam. Illo, quidem vero?
+				Autem minus fugit ad similique id atque cupiditate reprehenderit. Sint odit eligendi neque
+				suscipit animi, tenetur rem nihil nostrum officia porro maiores, reprehenderit ipsa
+				aspernatur eaque temporibus. Fuga eaque accusamus perspiciatis voluptate sapiente dolore
+				tempore totam quas est nam, dolores commodi corporis eos omnis? Quisquam, aperiam alias.
+				Quod asperiores aliquam eaque nostrum debitis voluptatem quia, enim voluptates. Nostrum,
+				aliquam. Error voluptatibus modi nisi possimus optio ullam. Repellendus quis reiciendis sunt
+				non, aspernatur voluptate quaerat suscipit qui dolorem debitis ab sequi nisi ipsa dolor
+				nobis error repudiandae possimus? Est, sed expedita ab nihil voluptates ea totam maiores,
+				quos provident, nam earum laboriosam obcaecati? Optio commodi iure sed alias facilis dolore
+				atque veniam dignissimos corporis! Necessitatibus maxime aperiam animi? Deleniti officiis
+				temporibus eius blanditiis eum excepturi, officia natus quasi, ex, facere exercitationem
+				maiores earum quis. Ut minus aliquid hic alias esse libero maxime! Atque quod molestiae
+				possimus alias fugiat. Dolorem quos officia animi quasi cumque tempora aliquam sapiente
+				deleniti fuga debitis recusandae blanditiis alias reprehenderit perferendis explicabo
+				laudantium, possimus corporis esse nulla velit, incidunt iusto. Numquam tempora porro
+				voluptates?
+			</p>
 		</div>
 		<div class="content {activeContent === 'content-4' ? 'visible' : ''}" id="content-4">
-			<h1>Escenaries <span class="material-icons"> landscape </span></h1>
+			<h1>Scenarios <span class="material-icons"> landscape </span></h1>
 			<img
 				src="https://www.mascomunidad.org.ar/wp-content/uploads/2023/03/Ciudades-IA-2000x1125.jpg"
 				alt=""
@@ -151,18 +198,87 @@
 		</div>
 		<div class="content {activeContent === 'content-5' ? 'visible' : ''}" id="content-5">
 			<h1>Interactions <span class="material-icons"> favorite </span></h1>
-			<img src="" alt="" />
-			<p class="text-content">Pruebas de desarrollo para StorIA</p>
+			<img src="https://reviewob.com/wp-content/uploads/2019/02/2-20-19social.jpg" alt="" />
+			<p class="text-content">
+				Qorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptatibus cumque quasi
+				optio nihil, debitis sit rem deserunt modi. Labore nobis reiciendis id repellendus aut
+				provident soluta, nihil laudantium tenetur. Sequi molestiae, odio laborum ex deleniti quia
+				eligendi dolore vero, dolor doloribus ipsa ullam! Deserunt voluptatem veritatis enim maiores
+				quasi maxime labore suscipit? Alias aliquid nam maiores qui at aliquam. Illo, quidem vero?
+				Autem minus fugit ad similique id atque cupiditate reprehenderit. Sint odit eligendi neque
+				suscipit animi, tenetur rem nihil nostrum officia porro maiores, reprehenderit ipsa
+				aspernatur eaque temporibus. Fuga eaque accusamus perspiciatis voluptate sapiente dolore
+				tempore totam quas est nam, dolores commodi corporis eos omnis? Quisquam, aperiam alias.
+				Quod asperiores aliquam eaque nostrum debitis voluptatem quia, enim voluptates. Nostrum,
+				aliquam. Error voluptatibus modi nisi possimus optio ullam. Repellendus quis reiciendis sunt
+				non, aspernatur voluptate quaerat suscipit qui dolorem debitis ab sequi nisi ipsa dolor
+				nobis error repudiandae possimus? Est, sed expedita ab nihil voluptates ea totam maiores,
+				quos provident, nam earum laboriosam obcaecati? Optio commodi iure sed alias facilis dolore
+				atque veniam dignissimos corporis! Necessitatibus maxime aperiam animi? Deleniti officiis
+				temporibus eius blanditiis eum excepturi, officia natus quasi, ex, facere exercitationem
+				maiores earum quis. Ut minus aliquid hic alias esse libero maxime! Atque quod molestiae
+				possimus alias fugiat. Dolorem quos officia animi quasi cumque tempora aliquam sapiente
+				deleniti fuga debitis recusandae blanditiis alias reprehenderit perferendis explicabo
+				laudantium, possimus corporis esse nulla velit, incidunt iusto. Numquam tempora porro
+				voluptates?
+			</p>
 		</div>
 		<div class="content {activeContent === 'content-6' ? 'visible' : ''}" id="content-6">
 			<h1>Comments <span class="material-icons"> insert_comment </span></h1>
-			<img src="" alt="" />
-			<p class="text-content">Pruebas de desarrollo para StorIA</p>
+			<img
+				src="https://media.sproutsocial.com/uploads/2023/11/Social-media-comments-final-2.png"
+				alt=""
+			/>
+			<p class="text-content">
+				Qorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptatibus cumque quasi
+				optio nihil, debitis sit rem deserunt modi. Labore nobis reiciendis id repellendus aut
+				provident soluta, nihil laudantium tenetur. Sequi molestiae, odio laborum ex deleniti quia
+				eligendi dolore vero, dolor doloribus ipsa ullam! Deserunt voluptatem veritatis enim maiores
+				quasi maxime labore suscipit? Alias aliquid nam maiores qui at aliquam. Illo, quidem vero?
+				Autem minus fugit ad similique id atque cupiditate reprehenderit. Sint odit eligendi neque
+				suscipit animi, tenetur rem nihil nostrum officia porro maiores, reprehenderit ipsa
+				aspernatur eaque temporibus. Fuga eaque accusamus perspiciatis voluptate sapiente dolore
+				tempore totam quas est nam, dolores commodi corporis eos omnis? Quisquam, aperiam alias.
+				Quod asperiores aliquam eaque nostrum debitis voluptatem quia, enim voluptates. Nostrum,
+				aliquam. Error voluptatibus modi nisi possimus optio ullam. Repellendus quis reiciendis sunt
+				non, aspernatur voluptate quaerat suscipit qui dolorem debitis ab sequi nisi ipsa dolor
+				nobis error repudiandae possimus? Est, sed expedita ab nihil voluptates ea totam maiores,
+				quos provident, nam earum laboriosam obcaecati? Optio commodi iure sed alias facilis dolore
+				atque veniam dignissimos corporis! Necessitatibus maxime aperiam animi? Deleniti officiis
+				temporibus eius blanditiis eum excepturi, officia natus quasi, ex, facere exercitationem
+				maiores earum quis. Ut minus aliquid hic alias esse libero maxime! Atque quod molestiae
+				possimus alias fugiat. Dolorem quos officia animi quasi cumque tempora aliquam sapiente
+				deleniti fuga debitis recusandae blanditiis alias reprehenderit perferendis explicabo
+				laudantium, possimus corporis esse nulla velit, incidunt iusto. Numquam tempora porro
+				voluptates?
+			</p>
 		</div>
 		<div class="content {activeContent === 'content-7' ? 'visible' : ''}" id="content-7">
 			<h1>Reports <span class="material-icons"> report_problem </span></h1>
-			<img src="" alt="" />
-			<p class="text-content">Pruebas de desarrollo para StorIA</p>
+			<img src="https://cdn.mos.cms.futurecdn.net/Ww63adT4gZijYvL7naPhkY-1280-80.jpg.webp" alt="" />
+			<p class="text-content">
+				Qorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptatibus cumque quasi
+				optio nihil, debitis sit rem deserunt modi. Labore nobis reiciendis id repellendus aut
+				provident soluta, nihil laudantium tenetur. Sequi molestiae, odio laborum ex deleniti quia
+				eligendi dolore vero, dolor doloribus ipsa ullam! Deserunt voluptatem veritatis enim maiores
+				quasi maxime labore suscipit? Alias aliquid nam maiores qui at aliquam. Illo, quidem vero?
+				Autem minus fugit ad similique id atque cupiditate reprehenderit. Sint odit eligendi neque
+				suscipit animi, tenetur rem nihil nostrum officia porro maiores, reprehenderit ipsa
+				aspernatur eaque temporibus. Fuga eaque accusamus perspiciatis voluptate sapiente dolore
+				tempore totam quas est nam, dolores commodi corporis eos omnis? Quisquam, aperiam alias.
+				Quod asperiores aliquam eaque nostrum debitis voluptatem quia, enim voluptates. Nostrum,
+				aliquam. Error voluptatibus modi nisi possimus optio ullam. Repellendus quis reiciendis sunt
+				non, aspernatur voluptate quaerat suscipit qui dolorem debitis ab sequi nisi ipsa dolor
+				nobis error repudiandae possimus? Est, sed expedita ab nihil voluptates ea totam maiores,
+				quos provident, nam earum laboriosam obcaecati? Optio commodi iure sed alias facilis dolore
+				atque veniam dignissimos corporis! Necessitatibus maxime aperiam animi? Deleniti officiis
+				temporibus eius blanditiis eum excepturi, officia natus quasi, ex, facere exercitationem
+				maiores earum quis. Ut minus aliquid hic alias esse libero maxime! Atque quod molestiae
+				possimus alias fugiat. Dolorem quos officia animi quasi cumque tempora aliquam sapiente
+				deleniti fuga debitis recusandae blanditiis alias reprehenderit perferendis explicabo
+				laudantium, possimus corporis esse nulla velit, incidunt iusto. Numquam tempora porro
+				voluptates?
+			</p>
 		</div>
 	</div>
 </div>
