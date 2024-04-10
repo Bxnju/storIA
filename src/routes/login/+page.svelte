@@ -3,6 +3,10 @@
 	import { onMount } from 'svelte';
 	import world from '$lib/images/planet-1.png';
 
+	let token = 'TOKENNENENNE!';
+
+	localStorage.setItem('authToken', token);
+
 	let email = '';
 	let password = '';
 	let errorMessage = '';
@@ -57,7 +61,7 @@
 <form on:submit|preventDefault={handleSubmit}>
 	<h1>Login to StorIA</h1>
 	<label>
-		Email
+		{localStorage.getItem('authToken')}
 		<input type="email" bind:value={email} />
 	</label>
 
