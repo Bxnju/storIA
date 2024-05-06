@@ -31,13 +31,13 @@
 			<div class="footer-column">
 				<h3>Contact Us</h3>
 				<ul>
-					<li>Email: contact@yourdomain.com</li>
-					<li>Phone: +1 234 567 890</li>
+					<li>Email: contact@storia.com</li>
+					<li>Phone: +57 3023344987</li>
 				</ul>
 			</div>
 		</div>
 		<div class="footer-bottom">
-			<p>&copy; 2024 Your Company. All rights reserved.</p>
+			<p>&copy; 2024 StorIA. All rights reserved.</p>
 		</div>
 	</footer>
 </div>
