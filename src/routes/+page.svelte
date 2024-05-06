@@ -73,15 +73,15 @@
 	<h1>Some of our best goals of 2024</h1>
 	<div class="goals">
 		<div class="goal">
-			<h2 class="animated-number" data-value={num_stories}></h2>
+			<h2 class="animated-number" data-value={num_stories}>0</h2>
 			<h4>Stories</h4>
 		</div>
 		<div class="goal">
-			<h2 class="animated-number" data-value={num_users}></h2>
+			<h2 class="animated-number" data-value={num_users}>0</h2>
 			<h4>Users</h4>
 		</div>
 		<div class="goal">
-			<h2 class="animated-number" data-value={num_characters}></h2>
+			<h2 class="animated-number" data-value={num_characters}>0</h2>
 			<h4>Characters</h4>
 		</div>
 	</div>
