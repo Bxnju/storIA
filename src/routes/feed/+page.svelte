@@ -54,6 +54,11 @@
 		{#each $stories as story}
 			<div class="card" on:click={() => viewStory(story.id)}>
 				<h2>Title: {story.title}</h2>
+				<p style="margin-bottom: 1em;">
+					By
+					{story.user.name}
+					{story.user.last_name}
+				</p>
 				<p>{story.reviews.length == 0 ? 'Not reviews yet' : story.reviews.length + ' reviews'}</p>
 			</div>
 		{/each}

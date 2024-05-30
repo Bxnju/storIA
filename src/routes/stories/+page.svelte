@@ -56,6 +56,11 @@
 					<h2>Title: {story.title}</h2>
 					<p>{story.content.substring(0, 100)}...</p>
 					<p>
+						By
+						{story.user.name}
+						{story.user.last_name}
+					</p>
+					<p>
 						{story.reviews.length == 0 ? 'Not reviews yet' : story.reviews.length + ' reviews'}
 					</p>
 				</div>

@@ -5,7 +5,6 @@
 
 	let currentUser = null;
 
-	// Función para obtener las historias desde el backend
 	async function fetchUserData() {
 		try {
 			const authUser = localStorage.getItem('authUser');
@@ -24,11 +23,10 @@
 
 			console.log('Respuesta del backend:', currentUser);
 		} catch (error) {
-			console.error('Error fetching stories:', error);
+			console.error('Error fetching user data:', error);
 		}
 	}
 
-	// Obtener las historias cuando el componente se monta
 	onMount(() => {
 		fetchUserData();
 	});
@@ -36,22 +34,36 @@
 
 <svelte:head>
 	<title>StorIA | Account</title>
-	<meta name="description" content="About this app" />
+	<meta name="description" content="Account details" />
 </svelte:head>
 
-<div class="text-column">
-	<h1 class="page-title">Account</h1>
+<div class="account-container">
+	<h1 class="page-title">Account Details</h1>
+
+	{#if currentUser}
+		<div class="user-card">
+			<h2 class="user-name">{currentUser.name} {currentUser.last_name}</h2>
+			<p><strong>Email:</strong> {currentUser.mail}</p>
+			<p><strong>Birth Date:</strong> {new Date(currentUser.birth_date).toLocaleDateString()}</p>
+			{#if currentUser.num_phone}
+				<p><strong>Phone Number:</strong> {currentUser.num_phone}</p>
+			{/if}
+			<p>
+				<strong>Account Created:</strong>
+				{new Date(currentUser.created_at).toLocaleDateString()}
+			</p>
+			<p><strong>Last Updated:</strong> {new Date(currentUser.updated_at).toLocaleDateString()}</p>
+		</div>
+	{:else}
+		<p>Loading user data...</p>
+	{/if}
+
+	<a
+		class="btn_logout"
+		onclick="localStorage.removeItem('authUser'); location.replace('/')"
+		href="/">Logout</a
+	>
 </div>
-
-{#if currentUser}
-	<p>Welcome, {currentUser.name}!</p>
-{:else}
-	<p>Loading user data...</p>
-{/if}
-
-<a class="btn_login" onclick="localStorage.removeItem('authUser'); location.replace('/')" href="/"
-	>Logout</a
->
 
 <style>
 	h1 {
@@ -59,17 +71,62 @@
 		font-family: var(--chakra);
 		color: var(--green);
 		font-weight: bold;
-		list-style: none;
 		animation: fadeIn 0.5s ease-in-out;
 	}
 
-	.btn_login {
+	.account-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 2em;
+		background-color: rgba(5, 48, 7, 0.51);
+		border-radius: 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+
+	.user-card {
+		background-color: rgba(2, 49, 4, 0.861);
+		border-radius: 10px;
+		padding: 2em;
+		width: 100%;
+		max-width: 500px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		margin-bottom: 1.5em;
+		color: var(--white);
+	}
+
+	.user-name {
+		font-size: 1.5em;
+		font-family: var(--raleway);
+		color: var(--dark-green);
+		margin-bottom: 1em;
+	}
+
+	.user-card p {
+		font-size: 1.1em;
+		font-family: var(--raleway);
+		color: var(--gray);
+		margin: 0.5em 0;
+	}
+
+	.user-card p strong {
+		color: var(--dark-gray);
+	}
+
+	.btn_logout {
 		background: var(--m-green);
 		color: var(--white);
 		padding: 0.5em 1em;
+		text-decoration: none;
 		border-radius: 5px;
 		font-family: var(--raleway);
 		font-size: 1.5em;
-		transition: color 0.2s linear;
+		transition: background 0.2s linear;
+		cursor: pointer;
+		text-align: center;
+	}
+
+	.btn_logout:hover {
+		background: var(--green);
 	}
 </style>

@@ -102,7 +102,10 @@
 						{#each storyResponse.reviews as review}
 							<div class="review">
 								<h2>{review.review}</h2>
-								<h4>Created at {format(new Date(review.created_at), 'dd/MM/yyyy HH:mm')}</h4>
+								<h4>By {review.user.name} {review.user.last_name}</h4>
+								<h4 style="font-size: 0.8em;">
+									Created at {format(new Date(review.created_at), 'dd/MM/yyyy HH:mm')}
+								</h4>
 							</div>
 						{/each}
 					</div>

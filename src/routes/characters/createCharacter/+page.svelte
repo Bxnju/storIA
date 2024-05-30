@@ -93,7 +93,7 @@
 				<input type="text" bind:value={physicalCharacteristic} />
 			</label>
 
-			<button
+			<a
 				class="add_characteristic_button"
 				on:click={() => {
 					if (physicalCharacteristics.length < 5 && physicalCharacteristic.length > 0) {
@@ -103,7 +103,7 @@
 					} else {
 						alert('You have more than 5 characteristics or the field is empty');
 					}
-				}}>Add physical characteristic</button
+				}}>Add physical characteristic</a
 			>
 		</div>
 
@@ -118,7 +118,7 @@
 				<input type="text" bind:value={emotionalCharacteristic} />
 			</label>
 
-			<button
+			<a
 				class="add_characteristic_button"
 				on:click={() => {
 					if (emotionalCharacteristics.length < 5 && emotionalCharacteristic.length > 0) {
@@ -128,7 +128,7 @@
 					} else {
 						alert('You have more than 5 characteristics or the field is empty');
 					}
-				}}>Add emotional characteristic</button
+				}}>Add emotional characteristic</a
 			>
 		</div>
 	</div>
@@ -291,6 +291,8 @@
 
 	.add_characteristic_button {
 		background-color: var(--m-green);
+		text-align: center;
+		text-decoration: none;
 		color: var(--white);
 		border: none;
 		font-family: var(--chakra);

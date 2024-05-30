@@ -86,27 +86,19 @@
 				alt=""
 			/>
 			<p class="text-content">
-				Qorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptatibus cumque quasi
-				optio nihil, debitis sit rem deserunt modi. Labore nobis reiciendis id repellendus aut
-				provident soluta, nihil laudantium tenetur. Sequi molestiae, odio laborum ex deleniti quia
-				eligendi dolore vero, dolor doloribus ipsa ullam! Deserunt voluptatem veritatis enim maiores
-				quasi maxime labore suscipit? Alias aliquid nam maiores qui at aliquam. Illo, quidem vero?
-				Autem minus fugit ad similique id atque cupiditate reprehenderit. Sint odit eligendi neque
-				suscipit animi, tenetur rem nihil nostrum officia porro maiores, reprehenderit ipsa
-				aspernatur eaque temporibus. Fuga eaque accusamus perspiciatis voluptate sapiente dolore
-				tempore totam quas est nam, dolores commodi corporis eos omnis? Quisquam, aperiam alias.
-				Quod asperiores aliquam eaque nostrum debitis voluptatem quia, enim voluptates. Nostrum,
-				aliquam. Error voluptatibus modi nisi possimus optio ullam. Repellendus quis reiciendis sunt
-				non, aspernatur voluptate quaerat suscipit qui dolorem debitis ab sequi nisi ipsa dolor
-				nobis error repudiandae possimus? Est, sed expedita ab nihil voluptates ea totam maiores,
-				quos provident, nam earum laboriosam obcaecati? Optio commodi iure sed alias facilis dolore
-				atque veniam dignissimos corporis! Necessitatibus maxime aperiam animi? Deleniti officiis
-				temporibus eius blanditiis eum excepturi, officia natus quasi, ex, facere exercitationem
-				maiores earum quis. Ut minus aliquid hic alias esse libero maxime! Atque quod molestiae
-				possimus alias fugiat. Dolorem quos officia animi quasi cumque tempora aliquam sapiente
-				deleniti fuga debitis recusandae blanditiis alias reprehenderit perferendis explicabo
-				laudantium, possimus corporis esse nulla velit, incidunt iusto. Numquam tempora porro
-				voluptates?
+				StorIA is an innovative application that allows you to create fascinating stories using
+				artificial intelligence. You don't need to be an expert to be a great storyteller. <br /><br
+				/>At StorIA, we invite you to leave behind the conventional and the routine, and to unleash
+				your imagination, your ideas, and your dreams. <br /><br />After registering, you will be
+				part of this chronicling community. Now, let's create magnificent stories with the help of
+				AI! To get started, imagine your own characters who will be in your stories, detailing their
+				physical characteristics, skills and weaknesses, intellectual qualities, powers, and other
+				relevant aspects. <br /><br />Let your imagination run wild in the creation of characters.
+				Design the scenarios where your story will take place. Describe the setting of the events in
+				detail. <br /><br />You can choose an existing site that inspires you or create a completely
+				new one. The choice is yours. <br /><br />Publish your stories so other users can discover
+				and interact with them. You also have the opportunity to comment on the narratives of
+				others. Remember, the limit is set by you!
 			</p>
 		</div>
 		<div class="content {activeContent === 'content-2' ? 'visible' : ''}" id="content-2">
@@ -116,54 +108,34 @@
 				alt=""
 			/>
 			<p class="text-content">
-				Qorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptatibus cumque quasi
-				optio nihil, debitis sit rem deserunt modi. Labore nobis reiciendis id repellendus aut
-				provident soluta, nihil laudantium tenetur. Sequi molestiae, odio laborum ex deleniti quia
-				eligendi dolore vero, dolor doloribus ipsa ullam! Deserunt voluptatem veritatis enim maiores
-				quasi maxime labore suscipit? Alias aliquid nam maiores qui at aliquam. Illo, quidem vero?
-				Autem minus fugit ad similique id atque cupiditate reprehenderit. Sint odit eligendi neque
-				suscipit animi, tenetur rem nihil nostrum officia porro maiores, reprehenderit ipsa
-				aspernatur eaque temporibus. Fuga eaque accusamus perspiciatis voluptate sapiente dolore
-				tempore totam quas est nam, dolores commodi corporis eos omnis? Quisquam, aperiam alias.
-				Quod asperiores aliquam eaque nostrum debitis voluptatem quia, enim voluptates. Nostrum,
-				aliquam. Error voluptatibus modi nisi possimus optio ullam. Repellendus quis reiciendis sunt
-				non, aspernatur voluptate quaerat suscipit qui dolorem debitis ab sequi nisi ipsa dolor
-				nobis error repudiandae possimus? Est, sed expedita ab nihil voluptates ea totam maiores,
-				quos provident, nam earum laboriosam obcaecati? Optio commodi iure sed alias facilis dolore
-				atque veniam dignissimos corporis! Necessitatibus maxime aperiam animi? Deleniti officiis
-				temporibus eius blanditiis eum excepturi, officia natus quasi, ex, facere exercitationem
-				maiores earum quis. Ut minus aliquid hic alias esse libero maxime! Atque quod molestiae
-				possimus alias fugiat. Dolorem quos officia animi quasi cumque tempora aliquam sapiente
-				deleniti fuga debitis recusandae blanditiis alias reprehenderit perferendis explicabo
-				laudantium, possimus corporis esse nulla velit, incidunt iusto. Numquam tempora porro
-				voluptates?
+				Every story needs characters, because without them, there is no plot. But don't worry, you
+				don't have to create them step by step. You just need to briefly describe what they would be
+				like. <br /><br />For this, you can add characteristics such as: <br /><br />Name<br /><br
+				/>Ethnicity<br /><br />Age <br /><br />Sex/Gender (Male, Female, LGBTQ+, Not Identified)
+				<br /><br />Physical characteristics: add details like height, body build (slim, muscular),
+				strength (strong or weak), special abilities, weaknesses, whether they are a hero or a
+				villain, among others. <br /><br />Feel free to add any detail you consider relevant.
+				<br /><br />Intellectual and emotional characteristics: Describe aspects such as their
+				mentality (positive, winning, disturbed, vengeful), their morality (virtuous, ethical), and
+				other personality traits.<br /><br /> Add all the information you consider necessary to complete
+				your character. Let your imagination run free and create a unique character. You can create as
+				many as you want.
 			</p>
 		</div>
 		<div class="content {activeContent === 'content-3' ? 'visible' : ''}" id="content-3">
 			<h1>Context <span class="material-icons"> emoji_objects </span></h1>
 			<img src="https://i.pinimg.com/736x/e8/bf/f3/e8bff3d8091182dcbb0b3e64488b04b4.jpg" alt="" />
 			<p class="text-content">
-				Qorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptatibus cumque quasi
-				optio nihil, debitis sit rem deserunt modi. Labore nobis reiciendis id repellendus aut
-				provident soluta, nihil laudantium tenetur. Sequi molestiae, odio laborum ex deleniti quia
-				eligendi dolore vero, dolor doloribus ipsa ullam! Deserunt voluptatem veritatis enim maiores
-				quasi maxime labore suscipit? Alias aliquid nam maiores qui at aliquam. Illo, quidem vero?
-				Autem minus fugit ad similique id atque cupiditate reprehenderit. Sint odit eligendi neque
-				suscipit animi, tenetur rem nihil nostrum officia porro maiores, reprehenderit ipsa
-				aspernatur eaque temporibus. Fuga eaque accusamus perspiciatis voluptate sapiente dolore
-				tempore totam quas est nam, dolores commodi corporis eos omnis? Quisquam, aperiam alias.
-				Quod asperiores aliquam eaque nostrum debitis voluptatem quia, enim voluptates. Nostrum,
-				aliquam. Error voluptatibus modi nisi possimus optio ullam. Repellendus quis reiciendis sunt
-				non, aspernatur voluptate quaerat suscipit qui dolorem debitis ab sequi nisi ipsa dolor
-				nobis error repudiandae possimus? Est, sed expedita ab nihil voluptates ea totam maiores,
-				quos provident, nam earum laboriosam obcaecati? Optio commodi iure sed alias facilis dolore
-				atque veniam dignissimos corporis! Necessitatibus maxime aperiam animi? Deleniti officiis
-				temporibus eius blanditiis eum excepturi, officia natus quasi, ex, facere exercitationem
-				maiores earum quis. Ut minus aliquid hic alias esse libero maxime! Atque quod molestiae
-				possimus alias fugiat. Dolorem quos officia animi quasi cumque tempora aliquam sapiente
-				deleniti fuga debitis recusandae blanditiis alias reprehenderit perferendis explicabo
-				laudantium, possimus corporis esse nulla velit, incidunt iusto. Numquam tempora porro
-				voluptates?
+				At StorIA, our mission is to create magnificent stories, and to achieve this we need to know
+				your imagination. <br /><br />Therefore, we invite you to share your ideas with us so that
+				we can bring extraordinary stories to life based on your creativity. <br /><br />To start
+				creating a story, we need you to describe some key details, such as the plot you want to
+				develop, the time period in which it will take place, the characters you want to include,
+				the important events, the year, the conflicts, and any other relevant aspect. <br /><br
+				/>Your imagination is the limit. Let your creative mind run free and allow the innocence and
+				creativity of your inner child to guide the process. The more information and details you
+				provide us, the richer and more immersive the story we will create together will be.
+				<br /><br />We are eager to see how far your imagination can go!
 			</p>
 		</div>
 		<div class="content {activeContent === 'content-4' ? 'visible' : ''}" id="content-4">
@@ -173,54 +145,35 @@
 				alt=""
 			/>
 			<p class="text-content">
-				Qorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptatibus cumque quasi
-				optio nihil, debitis sit rem deserunt modi. Labore nobis reiciendis id repellendus aut
-				provident soluta, nihil laudantium tenetur. Sequi molestiae, odio laborum ex deleniti quia
-				eligendi dolore vero, dolor doloribus ipsa ullam! Deserunt voluptatem veritatis enim maiores
-				quasi maxime labore suscipit? Alias aliquid nam maiores qui at aliquam. Illo, quidem vero?
-				Autem minus fugit ad similique id atque cupiditate reprehenderit. Sint odit eligendi neque
-				suscipit animi, tenetur rem nihil nostrum officia porro maiores, reprehenderit ipsa
-				aspernatur eaque temporibus. Fuga eaque accusamus perspiciatis voluptate sapiente dolore
-				tempore totam quas est nam, dolores commodi corporis eos omnis? Quisquam, aperiam alias.
-				Quod asperiores aliquam eaque nostrum debitis voluptatem quia, enim voluptates. Nostrum,
-				aliquam. Error voluptatibus modi nisi possimus optio ullam. Repellendus quis reiciendis sunt
-				non, aspernatur voluptate quaerat suscipit qui dolorem debitis ab sequi nisi ipsa dolor
-				nobis error repudiandae possimus? Est, sed expedita ab nihil voluptates ea totam maiores,
-				quos provident, nam earum laboriosam obcaecati? Optio commodi iure sed alias facilis dolore
-				atque veniam dignissimos corporis! Necessitatibus maxime aperiam animi? Deleniti officiis
-				temporibus eius blanditiis eum excepturi, officia natus quasi, ex, facere exercitationem
-				maiores earum quis. Ut minus aliquid hic alias esse libero maxime! Atque quod molestiae
-				possimus alias fugiat. Dolorem quos officia animi quasi cumque tempora aliquam sapiente
-				deleniti fuga debitis recusandae blanditiis alias reprehenderit perferendis explicabo
-				laudantium, possimus corporis esse nulla velit, incidunt iusto. Numquam tempora porro
-				voluptates?
+				In StorIA, your stories will unfold in splendid, incredible, and magnificent places. With
+				our platform, stories can come to life in any setting you desire, from the beautiful forests
+				of Norway and the vast Sahara desert to the divine landscapes of the Zelda video game you
+				have always loved. <br /><br /> This is where magic becomes real. By creating great stories
+				with unique characters and narratives, they will develop in wonderful places, full of
+				scenarios that seem straight out of a fairy tale. <br /><br />At StorIA, we leave behind
+				common reality to open the door to the unforgettable, allowing you to explore worlds and
+				scenarios you had only imagined. <br /><br />There are no limits to where our stories can
+				take us. You can create as many characters as you want, add all the necessary information to
+				bring them to life, and specify every detail of the world they will live in. <br /><br /> With
+				StorIA, every corner of your imagination can become a vibrant, lively setting for your narratives.
 			</p>
 		</div>
 		<div class="content {activeContent === 'content-5' ? 'visible' : ''}" id="content-5">
 			<h1>Interactions <span class="material-icons"> favorite </span></h1>
 			<img src="https://reviewob.com/wp-content/uploads/2019/02/2-20-19social.jpg" alt="" />
 			<p class="text-content">
-				Qorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptatibus cumque quasi
-				optio nihil, debitis sit rem deserunt modi. Labore nobis reiciendis id repellendus aut
-				provident soluta, nihil laudantium tenetur. Sequi molestiae, odio laborum ex deleniti quia
-				eligendi dolore vero, dolor doloribus ipsa ullam! Deserunt voluptatem veritatis enim maiores
-				quasi maxime labore suscipit? Alias aliquid nam maiores qui at aliquam. Illo, quidem vero?
-				Autem minus fugit ad similique id atque cupiditate reprehenderit. Sint odit eligendi neque
-				suscipit animi, tenetur rem nihil nostrum officia porro maiores, reprehenderit ipsa
-				aspernatur eaque temporibus. Fuga eaque accusamus perspiciatis voluptate sapiente dolore
-				tempore totam quas est nam, dolores commodi corporis eos omnis? Quisquam, aperiam alias.
-				Quod asperiores aliquam eaque nostrum debitis voluptatem quia, enim voluptates. Nostrum,
-				aliquam. Error voluptatibus modi nisi possimus optio ullam. Repellendus quis reiciendis sunt
-				non, aspernatur voluptate quaerat suscipit qui dolorem debitis ab sequi nisi ipsa dolor
-				nobis error repudiandae possimus? Est, sed expedita ab nihil voluptates ea totam maiores,
-				quos provident, nam earum laboriosam obcaecati? Optio commodi iure sed alias facilis dolore
-				atque veniam dignissimos corporis! Necessitatibus maxime aperiam animi? Deleniti officiis
-				temporibus eius blanditiis eum excepturi, officia natus quasi, ex, facere exercitationem
-				maiores earum quis. Ut minus aliquid hic alias esse libero maxime! Atque quod molestiae
-				possimus alias fugiat. Dolorem quos officia animi quasi cumque tempora aliquam sapiente
-				deleniti fuga debitis recusandae blanditiis alias reprehenderit perferendis explicabo
-				laudantium, possimus corporis esse nulla velit, incidunt iusto. Numquam tempora porro
-				voluptates?
+				If you have magnificent stories, why keep them to yourself? Share your incredible stories,
+				characters, and beautiful scenarios with other users. In StorIA, you can read and interact
+				with the great stories of your friends and acquaintances. <br /><br />Here at StorIA, we
+				want you to expand your imagination by discovering new stories, characters, and scenarios
+				full of beauty and magic. In addition to sharing your own stories, you will discover a vast
+				world of narratives created by other users. <br /><br />Imagine exploring tales set in
+				fantastic worlds, distant kingdoms, and wonderful landscapes, each more fascinating than the
+				last. <br /><br /> You will be able to get inspired by these stories, learn from them, and
+				find new ideas for your own creations. <br /><br /> Our community is here to help you grow
+				as a creator. Interact with other writers, exchange opinions, and collaborate on joint
+				projects. <br /><br />At StorIA, we believe that imagination has no limits, and together we
+				can take our stories to new heights.
 			</p>
 		</div>
 		<div class="content {activeContent === 'content-6' ? 'visible' : ''}" id="content-6">
@@ -230,54 +183,44 @@
 				alt=""
 			/>
 			<p class="text-content">
-				Qorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptatibus cumque quasi
-				optio nihil, debitis sit rem deserunt modi. Labore nobis reiciendis id repellendus aut
-				provident soluta, nihil laudantium tenetur. Sequi molestiae, odio laborum ex deleniti quia
-				eligendi dolore vero, dolor doloribus ipsa ullam! Deserunt voluptatem veritatis enim maiores
-				quasi maxime labore suscipit? Alias aliquid nam maiores qui at aliquam. Illo, quidem vero?
-				Autem minus fugit ad similique id atque cupiditate reprehenderit. Sint odit eligendi neque
-				suscipit animi, tenetur rem nihil nostrum officia porro maiores, reprehenderit ipsa
-				aspernatur eaque temporibus. Fuga eaque accusamus perspiciatis voluptate sapiente dolore
-				tempore totam quas est nam, dolores commodi corporis eos omnis? Quisquam, aperiam alias.
-				Quod asperiores aliquam eaque nostrum debitis voluptatem quia, enim voluptates. Nostrum,
-				aliquam. Error voluptatibus modi nisi possimus optio ullam. Repellendus quis reiciendis sunt
-				non, aspernatur voluptate quaerat suscipit qui dolorem debitis ab sequi nisi ipsa dolor
-				nobis error repudiandae possimus? Est, sed expedita ab nihil voluptates ea totam maiores,
-				quos provident, nam earum laboriosam obcaecati? Optio commodi iure sed alias facilis dolore
-				atque veniam dignissimos corporis! Necessitatibus maxime aperiam animi? Deleniti officiis
-				temporibus eius blanditiis eum excepturi, officia natus quasi, ex, facere exercitationem
-				maiores earum quis. Ut minus aliquid hic alias esse libero maxime! Atque quod molestiae
-				possimus alias fugiat. Dolorem quos officia animi quasi cumque tempora aliquam sapiente
-				deleniti fuga debitis recusandae blanditiis alias reprehenderit perferendis explicabo
-				laudantium, possimus corporis esse nulla velit, incidunt iusto. Numquam tempora porro
-				voluptates?
+				Now that you have read your friend's or another user's story, what did you think of it?
+				Would you change anything? Did you dislike it or, on the contrary, did you love it? Express
+				your opinions through the comments section that you will find in each story. <br /><br />It
+				is very valuable to know what others think about your creations, as this will help you
+				improve in the future. At StorIA, we believe in the importance of continuous improvement and
+				change. <br /><br />We want you to always feel motivated to try new things and to perfect
+				your skills. Do not be afraid to experiment and take the first step towards success.
+				<br /><br />Additionally, comments are not only useful for the author but also for you as a
+				reader. By sharing your thoughts and opinions, you contribute to a supportive and
+				collaborative community where everyone can learn and grow together. <br /><br />So, do not
+				hesitate to leave your comments and suggestions. Every opinion counts and can be the spark
+				that inspires a great improvement or a new direction for future stories. At StorIA, we value
+				your voice and are here to help you reach your full potential as a creator.
 			</p>
 		</div>
 		<div class="content {activeContent === 'content-7' ? 'visible' : ''}" id="content-7">
 			<h1>Reports <span class="material-icons"> report_problem </span></h1>
 			<img src="https://cdn.mos.cms.futurecdn.net/Ww63adT4gZijYvL7naPhkY-1280-80.jpg.webp" alt="" />
 			<p class="text-content">
-				Qorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat voluptatibus cumque quasi
-				optio nihil, debitis sit rem deserunt modi. Labore nobis reiciendis id repellendus aut
-				provident soluta, nihil laudantium tenetur. Sequi molestiae, odio laborum ex deleniti quia
-				eligendi dolore vero, dolor doloribus ipsa ullam! Deserunt voluptatem veritatis enim maiores
-				quasi maxime labore suscipit? Alias aliquid nam maiores qui at aliquam. Illo, quidem vero?
-				Autem minus fugit ad similique id atque cupiditate reprehenderit. Sint odit eligendi neque
-				suscipit animi, tenetur rem nihil nostrum officia porro maiores, reprehenderit ipsa
-				aspernatur eaque temporibus. Fuga eaque accusamus perspiciatis voluptate sapiente dolore
-				tempore totam quas est nam, dolores commodi corporis eos omnis? Quisquam, aperiam alias.
-				Quod asperiores aliquam eaque nostrum debitis voluptatem quia, enim voluptates. Nostrum,
-				aliquam. Error voluptatibus modi nisi possimus optio ullam. Repellendus quis reiciendis sunt
-				non, aspernatur voluptate quaerat suscipit qui dolorem debitis ab sequi nisi ipsa dolor
-				nobis error repudiandae possimus? Est, sed expedita ab nihil voluptates ea totam maiores,
-				quos provident, nam earum laboriosam obcaecati? Optio commodi iure sed alias facilis dolore
-				atque veniam dignissimos corporis! Necessitatibus maxime aperiam animi? Deleniti officiis
-				temporibus eius blanditiis eum excepturi, officia natus quasi, ex, facere exercitationem
-				maiores earum quis. Ut minus aliquid hic alias esse libero maxime! Atque quod molestiae
-				possimus alias fugiat. Dolorem quos officia animi quasi cumque tempora aliquam sapiente
-				deleniti fuga debitis recusandae blanditiis alias reprehenderit perferendis explicabo
-				laudantium, possimus corporis esse nulla velit, incidunt iusto. Numquam tempora porro
-				voluptates?
+				<span style="font-weight: bold;"
+					>Reports are currently being developed to maintain a safe environment.</span
+				><br /><br />
+
+				At StorIA, we are committed to providing the highest level of safety to all our users,
+				especially you. <br /><br />Therefore, in case of receiving a comment that may harm or
+				affect the mental integrity of another user, the author of the comment will be reported and
+				their activity on StorIA will be suspended for a period that varies according to the
+				severity of the offense.<br /><br /> Do not worry, we know that you are a brilliant and
+				well-meaning person. However, it is essential to protect every member of our community and,
+				above all, to maintain their enthusiasm for continuing to imagine and create new stories.<br
+				/><br /> We want StorIA to be a safe and positive space where everyone can express
+				themselves freely and develop their ideas without fear of being negatively judged. Besides
+				safety measures, we encourage all our users to maintain an environment of respect and mutual
+				support.<br /><br /> Constructive criticism is welcome, but it must always be expressed
+				kindly and considerately. Our goal is to foster a community where everyone feels valued and
+				motivated to continue contributing with their creativity. <br /><br />So, go ahead and share
+				your stories with confidence, knowing that StorIA is here to protect you and support your
+				growth as a creator.
 			</p>
 		</div>
 	</div>
@@ -408,17 +351,14 @@
 	}
 
 	.content.visible {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
-		grid-template-rows: repeat(10, 1fr); /* 5 filas iguales */
-		gap: 10px; /* Espacio entre celdas */
+		display: flex;
+		flex-direction: column;
+		gap: 1em; /* Espacio entre celdas */
 		animation: fadeIn 1s;
 	}
 
 	/* Estilos para el título */
 	.content h1 {
-		grid-column: 1 / 5; /* Ocupa 2 columnas */
-		grid-row: 1; /* Está en la primera fila */
 		padding: 0.5em 1em;
 		margin: auto;
 		background-color: var(--d-green);
@@ -433,20 +373,16 @@
 	}
 
 	.content > img {
-		grid-column: span 4;
-		grid-row: span 5;
 		object-fit: cover;
-		margin-bottom: 2em;
 		height: 100%;
-		width: 100%;
+		width: 70%;
 	}
 
 	.content .text-content {
 		margin-top: 1em;
 		text-align: justify;
-		grid-column: span 4;
-		grid-row: 10;
 		color: var(--white);
+		min-height: 100%;
 		overflow: auto;
 		padding: 2em 2em 2em 4em;
 		font-family: var(--raleway);
