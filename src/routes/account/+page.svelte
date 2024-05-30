@@ -52,7 +52,6 @@
 				<strong>Account Created:</strong>
 				{new Date(currentUser.created_at).toLocaleDateString()}
 			</p>
-			<p><strong>Last Updated:</strong> {new Date(currentUser.updated_at).toLocaleDateString()}</p>
 		</div>
 	{:else}
 		<p>Loading user data...</p>

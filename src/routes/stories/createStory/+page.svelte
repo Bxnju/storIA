@@ -2,7 +2,7 @@
 	import axios from 'axios';
 	import { onMount } from 'svelte';
 
-	import world from '$lib/images/planet-3.png';
+	import world from '$lib/images/planet-2.png';
 
 	let name = '';
 	let content = '';
@@ -74,7 +74,6 @@
 			console.log('Response from backend:', response.data);
 
 			errorMessage = '✔ Story created successfully.';
-			location.replace('/stories');
 		} catch (error) {
 			console.error('There was an error sending the request:', error.response.data);
 

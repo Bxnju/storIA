@@ -57,19 +57,19 @@
 				}
 			});
 
-			console.log('Respuesta del backend:', response.data);
+			console.log('Backend reply:', response.data);
 
 			let token = response.data.token;
 			localStorage.setItem('authToken', token);
 
-			errorMessage = '✔ Registrado correctamente. Ya se puede logear';
+			errorMessage = '✔ You are now succesfully registered! 🎉';
 		} catch (error) {
-			console.error('Error al enviar la petición:', error.response.data);
+			console.error('Error sending the request:', error.response.data);
 
 			if (error.response && error.response.status === 401) {
-				errorMessage = '🚩 Ha ocurrido un error en el registro. Revisa bien todos tus datos.';
+				errorMessage = '🚩 There was an error with your data. Please check it and try again.';
 			} else {
-				errorMessage = '🚩 Ha ocurrido un error. Por favor, intenta nuevamente más tarde.';
+				errorMessage = '🚩 There was an error with the server. Please try again later.';
 			}
 		}
 	}

@@ -2,8 +2,7 @@
 	import axios from 'axios';
 	import { onMount } from 'svelte';
 
-	import world from '$lib/images/planet-3.png';
-	import world_2 from '$lib/images/planet-4.png';
+	import world from '$lib/images/planet-5.png';
 
 	let name = '';
 	let physicalCharacteristic = '';
@@ -135,7 +134,7 @@
 
 	{#if physicalCharacteristics.length > 0}
 		<div class="physicalCharacteristics">
-			<h2>Caracteristicas fisicas:</h2>
+			<h2>Physical Characteristics:</h2>
 			{#each physicalCharacteristics as characteristic, index (characteristic)}
 				<p key={index}>{characteristic}</p>
 			{/each}
@@ -144,14 +143,15 @@
 
 	{#if emotionalCharacteristics.length > 0}
 		<div class="emotionalCharacteristics">
-			<h2>Caracteristicas emocionales:</h2>
+			<h2>Emotional Characteristics:</h2>
 			{#each emotionalCharacteristics as characteristic, index (characteristic)}
 				<p key={index}>{characteristic}</p>
 			{/each}
 		</div>
 	{/if}
 
-	<textarea placeholder="Escribe aqui el contexto de tu personaje" bind:value={context}></textarea>
+	<textarea placeholder="Write here the context of your next character" bind:value={context}
+	></textarea>
 	<button type="submit">Create with AI</button>
 
 	{#if errorMessage}

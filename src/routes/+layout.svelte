@@ -2,6 +2,28 @@
 	import Header from './components/Header.svelte';
 	import Button from './components/Button.svelte';
 	import './styles.css';
+
+	import { onMount } from 'svelte';
+
+	let loading = true;
+
+	async function getToken() {
+		try {
+			// localStorage.setItem('authUser', 'token');
+			const authUser = localStorage.getItem('authUser');
+			if (authUser) {
+				console.log('Logeado correctamente!');
+			}
+		} catch (error) {
+			console.error('Error en localStorage:', error);
+		} finally {
+			loading = false;
+		}
+	}
+
+	onMount(async () => {
+		await getToken();
+	});
 </script>
 
 <div class="app">
@@ -10,36 +32,50 @@
 	<main>
 		<slot />
 	</main>
-
-	<footer class="footer">
-		<div class="footer-inner">
-			<div class="footer-column">
-				<h3>Fast access</h3>
-				<ul>
-					<li><a href="/">Home</a></li>
-					<li><a href="/documentation">Documentation</a></li>
-					<li><a href="/about-us">About Us</a></li>
-				</ul>
+	{#if loading}
+		<footer
+			style="display: flex; justify-content: center; align-items: center; font-size: 2em; font-family: var(--chakra);"
+			class="footer"
+		>
+			Loading...
+		</footer>
+	{:else if typeof localStorage == 'undefined' || localStorage.getItem('authUser') == null}
+		<footer class="footer">
+			<div class="footer-inner">
+				<div class="footer-column">
+					<h3>Fast access</h3>
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/documentation">Documentation</a></li>
+						<li><a href="/about-us">About Us</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h3>Get Started</h3>
+					<ul>
+						<li><a href="/register">Register</a></li>
+						<li><a href="/login">Login</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h3>Contact Us</h3>
+					<ul>
+						<li>Email: contact@storia.com</li>
+						<li>Phone: +57 3023344987</li>
+					</ul>
+				</div>
 			</div>
-			<div class="footer-column">
-				<h3>Get Started</h3>
-				<ul>
-					<li><a href="/register">Register</a></li>
-					<li><a href="/login">Login</a></li>
-				</ul>
+			<div class="footer-bottom">
+				<p>&copy; 2024 StorIA. All rights reserved.</p>
 			</div>
-			<div class="footer-column">
-				<h3>Contact Us</h3>
-				<ul>
-					<li>Email: contact@storia.com</li>
-					<li>Phone: +57 3023344987</li>
-				</ul>
+		</footer>
+	{:else if typeof localStorage !== 'undefined' && localStorage.getItem('authUser') !== null}
+		<footer class="footer">
+			<div class="footer-bottom">
+				<p>&copy; 2024 StorIA. All rights reserved.</p>
 			</div>
-		</div>
-		<div class="footer-bottom">
-			<p>&copy; 2024 StorIA. All rights reserved.</p>
-		</div>
-	</footer>
+		</footer>
+	{/if}
 </div>
 
 <style>
