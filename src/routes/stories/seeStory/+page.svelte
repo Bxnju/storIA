@@ -82,6 +82,10 @@
 		<div class="text-column">
 			<div class="story-content">
 				<h1>Title: {storyResponse.story.title}</h1>
+				<p style="font-wight: bold; margin: 1em 0; font-family: var(--chakra);">
+					By {storyResponse.story.user.name}
+					{storyResponse.story.user.last_name}
+				</p>
 				<p>{storyResponse.story.content}</p>
 				<p>Created At: {new Date(storyResponse.story.created_at).toLocaleDateString()}</p>
 				<h1>Reviews</h1>

@@ -174,7 +174,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 15em;
+		width: 10em;
 		height: 5em;
 		border-radius: 2em;
 		transition: 0.7s;

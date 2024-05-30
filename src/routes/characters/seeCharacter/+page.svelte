@@ -48,10 +48,8 @@
 	{#if $character}
 		<div class="character-details">
 			<h1>Character name: {$character.name}</h1>
-			<p><strong>ID:</strong> {$character.id}</p>
 			<p><strong>Description:</strong> {$character.description}</p>
 			<p><strong>Created At:</strong> {new Date($character.created_at).toLocaleDateString()}</p>
-			<p><strong>Updated At:</strong> {new Date($character.updated_at).toLocaleDateString()}</p>
 		</div>
 	{:else}
 		<p class="loading_character">Loading Character...</p>
