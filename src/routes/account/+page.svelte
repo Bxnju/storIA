@@ -54,7 +54,7 @@
 			</p>
 		</div>
 	{:else}
-		<p>Loading user data...</p>
+		<p class="loading_user">Loading user data...</p>
 	{/if}
 
 	<a
@@ -127,5 +127,16 @@
 
 	.btn_logout:hover {
 		background: var(--green);
+	}
+
+	.loading_user {
+		width: 100%;
+		font-size: 1.5em;
+		font-family: var(--chakra);
+		color: var(--green);
+		font-weight: bold;
+		text-align: center;
+		list-style: none;
+		animation: fadeIn 0.5s ease-in-out;
 	}
 </style>

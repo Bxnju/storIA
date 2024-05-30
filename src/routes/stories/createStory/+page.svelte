@@ -55,6 +55,8 @@
 
 			content = `Scenario: ${scenario}\n\nContext: ${content}`;
 
+			errorMessage = 'Creating story...';
+
 			const response = await axios.post(
 				'http://127.0.0.1:3000/api/v1/create_story?len=en',
 				{
