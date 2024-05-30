@@ -9,10 +9,10 @@
 	--color-bg-0: rgb(202, 216, 228);
 	--color-bg-1: hsl(209, 36%, 86%);
 	--color-bg-2: hsl(224, 44%, 95%);
-	--d-green: #117406;
-	--m-green: #1db00c;
-	--green: #35e220;
-	--l-green: #79ff69;
+	--d-green: #042800;
+	--m-green: #11aa00;
+	--green: #20d50c;
+	--l-green: #3fe72c;
 	--white: #f2f2f2;
 	--dark: #262626;
 	--black: #0d0d0d;
@@ -58,6 +58,7 @@ body {
 	margin: 0;
 	background: linear-gradient(to left, rgba(0, 0, 30, 0.4), rgba(0, 0, 0, 0.5)),
 		url('../lib/images/space-bg.jpg');
+	backdrop-filter: blur(1px);
 	background-attachment: fixed;
 	background-size: 100vw 100vh;
 }
@@ -109,8 +110,9 @@ button:focus:not(:focus-visible) {
 	font-size: var(--page-title-font-size);
 	font-family: var(--chakra);
 	margin-bottom: 1em;
-	color: var(--m-green);
+	color: var(--white);
 	font-weight: bold;
+	list-style: none;
 	animation: fadeIn 0.5s ease-in-out;
 }
 
@@ -133,10 +135,12 @@ button:focus:not(:focus-visible) {
 }
 
 @keyframes float {
+
 	0%,
 	100% {
 		transform: translateY(-2em);
 	}
+
 	50% {
 		transform: translateY(0em);
 	}
@@ -146,6 +150,7 @@ button:focus:not(:focus-visible) {
 	0% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
@@ -156,6 +161,7 @@ button:focus:not(:focus-visible) {
 		opacity: 0;
 		transform: translateY(-20px);
 	}
+
 	100% {
 		opacity: 1;
 		transform: translateY(0);
@@ -167,6 +173,7 @@ button:focus:not(:focus-visible) {
 		opacity: 0;
 		transform: translateX(-1em);
 	}
+
 	100% {
 		opacity: 1;
 		transform: translateX(0);
@@ -174,10 +181,12 @@ button:focus:not(:focus-visible) {
 }
 
 @keyframes neon {
+
 	0%,
 	100% {
 		text-shadow: 0 0 5px var(--l-green);
 	}
+
 	50% {
 		text-shadow: 0 0 10px var(--l-green);
 	}

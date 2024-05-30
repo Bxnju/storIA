@@ -14,7 +14,7 @@
 	<footer class="footer">
 		<div class="footer-inner">
 			<div class="footer-column">
-				<h3>Company</h3>
+				<h3>Fast access</h3>
 				<ul>
 					<li><a href="/">Home</a></li>
 					<li><a href="/documentation">Documentation</a></li>
@@ -76,16 +76,25 @@
 
 	.footer-column {
 		flex: 1;
-		padding: 0 1em;
+		padding: 2em;
+		background: rgba(21, 84, 24, 0.486);
+		border-radius: 1em;
+		margin: 1em;
+		box-shadow:
+			inset 0 0 10px rgba(0, 0, 0, 0.6),
+			3 0 10px rgba(255, 255, 255, 0.6);
 	}
 
 	.footer-column h3 {
 		font-size: 1.5em;
+		text-align: center;
 		margin-bottom: 0.5em;
+		font-family: var(--chakra);
 	}
 
 	.footer-column ul {
 		list-style-type: none;
+		font-family: var(--raleway);
 		padding: 0;
 	}
 
@@ -100,6 +109,7 @@
 
 	.footer-bottom {
 		text-align: center;
+		font-family: var(--raleway);
 		margin-top: 1em;
 	}
 

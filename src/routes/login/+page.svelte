@@ -8,27 +8,25 @@
 	let password = '';
 	let errorMessage = '';
 
-	// Validador de email
 	function validateEmail(input) {
 		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 		return emailRegex.test(input);
 	}
 
-	// Validador de contraseña
 	function validatePassword(input) {
-		return input.length >= 5; // Longitud mínima de 6 caracteres
+		return input.length >= 5;
 	}
 
 	async function handleSubmit() {
 		errorMessage = '';
 
 		if (!validateEmail(mail)) {
-			errorMessage = '🚩 Por favor, ingrese un correo electrónico válido.';
+			errorMessage = '🚩 Please make sure that you wrote your email correctly';
 			return;
 		}
 
 		if (!validatePassword(password)) {
-			errorMessage = '🚩 La contraseña debe tener al menos 5 caracteres.';
+			errorMessage = '🚩 The password has to contain at least 6 characters';
 			return;
 		}
 
@@ -37,20 +35,20 @@
 				mail,
 				password
 			});
-
 			console.log('Respuesta del backend:', response.data);
 
 			let token = response.data.token;
-			localStorage.setItem('authToken', token);
+			localStorage.setItem('authUser', token);
 
-			errorMessage = '✔ Estas logeado correctamente';
+			errorMessage = '✔ You are logged in! Redirecting...';
+			location.replace('/feed');
 		} catch (error) {
-			console.error('Error al enviar la petición:', error.message);
+			console.error('There was an error trying to send the request:', error.message);
 
 			if (error.response && error.response.status === 401) {
-				errorMessage = '🚩 Acceso denegado. Comprueba tus credenciales.';
+				errorMessage = '🚩 Access denied. Please check your information and try again.';
 			} else {
-				errorMessage = '🚩 Ha ocurrido un error. Por favor, intenta nuevamente más tarde.';
+				errorMessage = '🚩 An error occurred. Please try again later.';
 			}
 		}
 	}

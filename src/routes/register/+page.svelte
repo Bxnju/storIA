@@ -35,7 +35,6 @@
 			errorMessage = '🚩 Por favor, ingrese un correo electrónico válido.';
 			return;
 		}
-
 		if (!validatePassword(password)) {
 			errorMessage = '🚩 La contraseña debe tener al menos 6 caracteres.';
 			return;

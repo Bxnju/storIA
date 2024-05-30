@@ -52,7 +52,7 @@
 			<li aria-current={$page.url.pathname === '/register' ? 'page' : undefined}>
 				<a href="/register">Register</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/login') ? 'page' : undefined}>
+			<li aria-current={$page.url.pathname === '/login' ? 'page' : undefined}>
 				<a class="btn_login" href="/login">Login</a>
 			</li>
 		</nav>
@@ -61,24 +61,20 @@
 	<header>
 		<h1>StorIA</h1>
 		<nav>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Feed</a>
+			<li aria-current={$page.url.pathname === '/feed' ? 'page' : undefined}>
+				<a href="/feed">Feed</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/documentation' ? 'page' : undefined}>
 				<a href="/documentation">Documentation</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/register' ? 'page' : undefined}>
-				<a href="/register">Characters</a>
+			<li aria-current={$page.url.pathname === '/characters' ? 'page' : undefined}>
+				<a href="/characters">Characters</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/login') ? 'page' : undefined}>
-				<a href="/login">Stories</a>
+			<li aria-current={$page.url.pathname === '/stories' ? 'page' : undefined}>
+				<a href="/stories">Stories</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/login') ? 'page' : undefined}>
-				<a
-					class="btn_login"
-					onclick="localStorage.removeItem('authUser'); location.replace('/')"
-					href="/">Account</a
-				>
+			<li aria-current={$page.url.pathname === '/account' ? 'page' : undefined}>
+				<a class="btn_login" href="/account">Account</a>
 			</li>
 		</nav>
 	</header>

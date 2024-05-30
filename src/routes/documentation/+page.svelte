@@ -40,7 +40,7 @@
 			data-content-id="content-2"
 			on:click={() => showContent('content-2')}
 		>
-			Characters <span class="material-icons"> accessibility_new </span>
+			Character <span class="material-icons"> accessibility_new </span>
 		</button>
 		<button
 			class="btn {activeContent === 'content-3' ? 'btn-active' : ''}"
@@ -110,7 +110,7 @@
 			</p>
 		</div>
 		<div class="content {activeContent === 'content-2' ? 'visible' : ''}" id="content-2">
-			<h1>Characters <span class="material-icons"> accessibility_new </span></h1>
+			<h1>Character <span class="material-icons"> accessibility_new </span></h1>
 			<img
 				src="https://static01.nyt.com/images/2023/09/27/multimedia/27META-AI-SUB1-clgh/27META-AI-SUB1-clgh-videoSixteenByNine3000.jpg"
 				alt=""
