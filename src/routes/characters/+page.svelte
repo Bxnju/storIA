@@ -44,6 +44,7 @@
 
 <div class="text-column">
 	<h1 class="page-title">Characters</h1>
+	<a class="button_addCharacter" href="/characters/createCharacter">Create new character</a>
 	<div class="characters-list">
 		{#if !$characters}
 			<h1>Loading characters...</h1>
@@ -72,6 +73,8 @@
 	}
 	.characters-list {
 		display: flex;
+		justify-content: center;
+		align-items: center;
 		flex-wrap: wrap;
 		gap: 1rem;
 	}
@@ -120,5 +123,26 @@
 		text-align: center;
 		list-style: none;
 		animation: fadeIn 0.5s ease-in-out;
+	}
+
+	.button_addCharacter {
+		position: absolute;
+		right: 3em;
+		text-decoration: none;
+		font-weight: bold;
+		border-radius: 2em;
+		top: 20%;
+		font-family: var(--chakra);
+		padding: 1em 2em;
+		background: var(--m-green);
+		color: var(--white);
+		transition: 0.7s;
+		animation:
+			fadeInLeft 1s ease-in-out,
+			pulse 1s infinite ease;
+	}
+
+	.button_addCharacter:hover {
+		transform: scale(1.05);
 	}
 </style>

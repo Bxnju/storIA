@@ -44,6 +44,7 @@
 
 <div class="text-column">
 	<h1 class="page-title">Stories</h1>
+	<a class="buttonAddStory" href="/stories/createStory">Create new story</a>
 	<div class="stories-list">
 		{#if !$stories}
 			<h1>Loading stories...</h1>
@@ -52,7 +53,7 @@
 		{:else}
 			{#each $stories as story}
 				<div class="story-card" on:click={() => viewStory(story.id)}>
-					<h2>{story.title}</h2>
+					<h2>Title: {story.title}</h2>
 					<p>{story.content.substring(0, 100)}...</p>
 					<p>
 						{story.reviews.length == 0 ? 'Not reviews yet' : story.reviews.length + ' reviews'}
@@ -78,7 +79,7 @@
 		gap: 1rem;
 	}
 	.story-card {
-		background-color: rgba(21, 84, 24, 0.486); /* Dark green */
+		background: linear-gradient(145deg, rgb(0, 76, 114), rgba(5, 48, 7, 0.51));
 		color: #fff;
 		padding: 1rem;
 		border-radius: 8px;
@@ -99,7 +100,6 @@
 	.story-card h2 {
 		padding: 0.5em 1em;
 		margin: auto;
-		background-color: var(--d-green);
 		color: var(--white);
 		margin-bottom: 1em;
 		border-radius: 2em;
@@ -118,8 +118,31 @@
 		font-size: 1.5em;
 		font-family: var(--chakra);
 		color: var(--green);
+		width: 100%;
+		text-align: center;
 		font-weight: bold;
 		list-style: none;
 		animation: fadeIn 0.5s ease-in-out;
+	}
+
+	.buttonAddStory {
+		position: absolute;
+		right: 3em;
+		text-decoration: none;
+		font-weight: bold;
+		border-radius: 2em;
+		top: 20%;
+		font-family: var(--chakra);
+		padding: 1em 2em;
+		background: linear-gradient(145deg, rgb(0, 76, 114), rgba(5, 48, 7, 0.51));
+		color: var(--white);
+		transition: 0.7s;
+		animation:
+			fadeInLeft 1s ease-in-out,
+			pulse 1s infinite ease;
+	}
+
+	.buttonAddStory:hover {
+		transform: scale(1.05);
 	}
 </style>

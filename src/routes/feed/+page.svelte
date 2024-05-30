@@ -50,33 +50,36 @@
 {#if $stories.length === 0}
 	<p class="no_stories">No stories found</p>
 {:else}
-	{#each $stories as story}
-		<div class="card" on:click={() => viewStory(story.id)}>
-			<h2>{story.title}</h2>
-			Author ID: {story.user_id}
-			<p>Preview: {story.content.slice(0, 100)}...</p>
-			Number of Reviews:{story.reviews.length}
-		</div>
-	{/each}
+	<div class="cards">
+		{#each $stories as story}
+			<div class="card" on:click={() => viewStory(story.id)}>
+				<h2>Title: {story.title}</h2>
+				<p>{story.reviews.length == 0 ? 'Not reviews yet' : story.reviews.length + ' reviews'}</p>
+			</div>
+		{/each}
+	</div>
 {/if}
 
 <style>
-	/* Estilos para el contenedor principal */
-	.text-column {
+	.cards {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		flex-direction: column;
-		margin-bottom: 2rem;
+		gap: 2em;
 	}
 
 	/* Estilos para las tarjetas de las historias */
 	.card {
-		background-color: #f9f9f9;
-		border-radius: 8px;
+		background: linear-gradient(145deg, rgb(0, 76, 114), rgba(5, 48, 7, 0.51));
+		border-radius: 2em;
+		min-width: 30%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 		padding: 1.5rem;
-		margin-bottom: 1rem;
 		transition:
 			transform 0.3s ease-in-out,
 			box-shadow 0.3s ease-in-out;
@@ -89,28 +92,24 @@
 	}
 
 	.card h2 {
+		text-align: center;
 		font-size: 1.5rem;
-		margin-bottom: 0.5rem;
-		color: #333;
+		margin-bottom: 1em;
+		font-family: var(--chakra);
+		color: var(--white);
 	}
 
 	.card p {
-		color: #666;
+		color: var(--white);
+		font-weight: bold;
 	}
 
-	/* Estilos para el mensaje de "No stories found" */
 	.no_stories {
-		font-size: 1.2rem;
-		color: #666;
-	}
-
-	/* Animación de fade in */
-	@keyframes fadeIn {
-		from {
-			opacity: 0;
-		}
-		to {
-			opacity: 1;
-		}
+		font-size: 1.5em;
+		font-family: var(--chakra);
+		color: var(--green);
+		font-weight: bold;
+		list-style: none;
+		animation: fadeIn 0.5s ease-in-out;
 	}
 </style>

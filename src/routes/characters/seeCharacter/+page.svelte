@@ -47,71 +47,73 @@
 <div class="text-column">
 	{#if $character}
 		<div class="character-details">
-			<h1>{$character.name}</h1>
+			<h1>Character name: {$character.name}</h1>
 			<p><strong>ID:</strong> {$character.id}</p>
 			<p><strong>Description:</strong> {$character.description}</p>
 			<p><strong>Created At:</strong> {new Date($character.created_at).toLocaleDateString()}</p>
 			<p><strong>Updated At:</strong> {new Date($character.updated_at).toLocaleDateString()}</p>
 		</div>
 	{:else}
-		<p>Loading Character...</p>
+		<p class="loading_character">Loading Character...</p>
 	{/if}
 </div>
 
 <style>
-    .text-column {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
+	.text-column {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
-    .character-details {
-        max-width: 600px;
-        padding: 20px;
-        background-color: #f8f9fa;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        text-align: left;
-    }
+	.character-details {
+		max-width: 800px;
+		padding: 20px;
+		background-color: rgba(21, 84, 24, 0.486);
+		border-radius: 10px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+		text-align: left;
+	}
 
-    .character-details h1 {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-        color: #333;
-    }
+	.character-details h1 {
+		font-size: 2.5rem;
+		margin-bottom: 10px;
+		color: var(--white);
+		font-family: var(--chakra);
+		font-weight: bold;
+	}
 
-    .character-details p {
-        font-size: 1.2rem;
-        margin-bottom: 8px;
-        color: #555;
-    }
+	.character-details p {
+		font-size: 1.2rem;
+		margin: 1em 0;
+		color: var(--white);
+		font-family: var(--raleway);
+	}
 
-    .character-details strong {
-        font-weight: bold;
-        color: #333;
-    }
+	.character-details strong {
+		font-weight: bold;
+		color: var(--white);
+	}
 
-    .character-details p:last-child {
-        margin-bottom: 0;
-    }
+	.character-details p:last-child {
+		margin-bottom: 0;
+	}
 
-    /* Animación de carga */
-    @keyframes pulse {
-        0% {
-            opacity: 0.6;
-        }
-        50% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0.6;
-        }
-    }
+	/* Animación de carga */
+	@keyframes pulse {
+		0% {
+			opacity: 0.6;
+		}
+		50% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0.6;
+		}
+	}
 
-    .loading-character {
-        font-size: 1.2rem;
-        color: #777;
-        animation: pulse 1.5s infinite;
-    }
+	.loading_character {
+		font-size: 1.2rem;
+		color: var(--white);
+		animation: pulse 1.5s infinite;
+	}
 </style>

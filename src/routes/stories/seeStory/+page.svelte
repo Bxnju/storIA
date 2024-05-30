@@ -6,18 +6,12 @@
 	let storyResponse = null;
 	let storyID = null;
 	let errorMessage = '';
-	let reviewText = '';
+	let content = '';
 
 	async function handleSubmit() {
 		errorMessage = '';
 
 		try {
-			const data = {
-				review: {
-					content: reviewText
-				}
-			};
-
 			const authUser = localStorage.getItem('authUser');
 			if (!authUser) {
 				console.error('Auth token not found in localStorage');
@@ -27,11 +21,14 @@
 			const response = await axios.post(
 				`http://127.0.0.1:3000/api/v1/create_review?story_id=${storyID}`,
 				{
+					review: {
+						content
+					}
+				},
+				{
 					headers: {
-						Authorization: `Bearer ${authUser}`,
-						'Content-Type': 'application/json'
-					},
-					body: { review: { content: reviewText } }
+						Authorization: `Bearer ${authUser}`
+					}
 				}
 			);
 			console.log('Respuesta del backend:', response.data);
@@ -58,7 +55,7 @@
 			fetchStory();
 		}
 		errorMessage = '';
-		reviewText = '';
+		content = '';
 	});
 
 	const fetchStory = async () => {
@@ -91,7 +88,7 @@
 				<form on:submit|preventDefault={handleSubmit}>
 					<div class="form_elements">
 						<h3>Let a comment for this story</h3>
-						<textarea autocapitalize="sentences" bind:value={reviewText} name="" id=""></textarea>
+						<textarea autocapitalize="sentences" bind:value={content} name="" id=""></textarea>
 
 						<button type="submit">Send comment!</button>
 					</div>
@@ -129,7 +126,7 @@
 	.story-content {
 		max-width: 900px;
 		padding: 3em 4em 4em 4em;
-		background-color: rgba(21, 84, 24, 0.486);
+		background: linear-gradient(145deg, rgb(0, 76, 114), rgba(5, 48, 7, 0.51));
 		border-radius: 10px;
 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 		text-align: left;
@@ -202,7 +199,11 @@
 		height: auto;
 		border-radius: 0.5em;
 		padding: 1em;
+		color: var(--l-green);
+		background: rgba(14, 92, 18, 0.51);
+		border: none;
 		font-weight: bold;
+		box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
 		font-size: 1.1em;
 		font-family: var(--raleway);
 	}
